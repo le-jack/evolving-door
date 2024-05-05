@@ -23,7 +23,7 @@ Continuously evolving project
     - Create a dropper
     - More names closer to default applications within Linux/Windows
 
--TBD
+- TBD
     - Ability to mutate hash
     - In memory (?)
     - Automatically selects a C2 host on the network
