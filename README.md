@@ -2,7 +2,7 @@
 Continuously evolving project
 
 # Current features:
--   Python
+-   Python/Bash
 -   Self Replication
 -   Prioritizes: /etc > /var > /home > /var/tmp > /tmp
 -   Randomized Name from a list of 3 currently
