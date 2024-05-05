@@ -1,4 +1,4 @@
-# evolving-door
+# evolving-door:
 Continuously evolving project
 
 # Current features:
@@ -8,7 +8,7 @@ Continuously evolving project
 -   Randomized Name from a list of 3 currently
 
 
-# Future Plans
+# Future Plans:
 - OS awareness
 - Network awareness
     - Checks all interfaces
