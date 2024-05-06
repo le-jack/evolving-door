@@ -1,7 +1,7 @@
 # evolving-door:
 Continuously evolving project
 
-# Current features:
+# Current Features:
 -   Python/Bash
 -   Self Replication
 -   Prioritizes: /etc > /var > /home > /var/tmp > /tmp
