@@ -6,7 +6,12 @@ Continuously evolving project
 -   Self Replication
 -   Prioritizes: /etc > /var > /home > /var/tmp > /tmp
 -   Randomized Name from a list of 3 currently
+-   Appends "ffff" to the end of the file to alter the md5sum
 
+# Current Week Plans:
+- Randomize the appended value
+- Checks for another copy of itself and stops
+- 
 
 # Future Plans:
 - Week 2
