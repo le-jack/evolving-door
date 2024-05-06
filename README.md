@@ -10,7 +10,7 @@ Continuously evolving project
 
 # Future Plans:
 - Week 2
-    - OS awareness
+    - Dropper OS awareness
     - Windows variant
         - Powershell
      
@@ -41,11 +41,14 @@ Continuously evolving project
     - Second replicant will check on the primary replicant to ensure that it is active
 
 - Dropper will become a C2
+    - Either ELF/EXE
     - Hosts spreader scripts
     - Keeps track of the secondary variants on the network
 
 - Spreaders will look for uninfected boxes and report to C2
+    - In memory with a back up
+    - Neighbor boxes will heartbeat and activate the back up if the script in memory is off
     - Spreaders will continuously replicate until all boxes that within the network are infected
     - If spreaded remotely, spreaders will change its name twice
-    - Family Tree kind of idea to track the movement of Evolving door
+    - Family Tree kind of idea to track the movement of Evolving door using a flagging system
     - Point back to the original dropper
