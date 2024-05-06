@@ -31,7 +31,7 @@ Continuously evolving project
   
   
   
-# Tentative Idea for Evolving Door
+# Tentative Idea for Evolving Door:
 - Two Variants
     - Dropper
     - Spreader
