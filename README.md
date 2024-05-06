@@ -11,7 +11,8 @@ Continuously evolving project
 # Current Week Plans:
 - Randomize the appended value
 - Checks for another copy of itself and stops
-- 
+  -- CRAZY IDEA:
+      - Check if you are a clone then append random value
 
 # Future Plans:
 - Week 2
