@@ -26,9 +26,13 @@ checker(){
 	done
 }
 
-while [ $counter -lt 2 ]; do
-	checker
+checker
+if [ "$counter" -eq 0 ]; then
 	replicate
-done
+elif [ "$counter" -ge 2 ]; then
+	exit
+elif [ "$counter" -eq 1 ]; then
+	echo "${0}"
+fi
 
-# 3 problems: Spawned replicant is not running, Replication is happening twice
+# 3 problems:  Replication is happening twice
