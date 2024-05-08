@@ -7,12 +7,17 @@ Continuously evolving project
 -   Prioritizes: /etc > /var > /home > /var/tmp > /tmp
 -   Randomized Name from a list of 3 currently
 -   Appends 4 character string to the end of the file to alter the hash
+-   Only works with sudo
+-   Can check for another copy of itself
+-   Spawns a script that spawns a script
+-   Randomized append value to change the hash
+-   
 
 # Current Week Plans:
-- Randomize the appended value
-- Checks for another copy of itself and stops
-  -- CRAZY IDEA:
-      - Check if you are a clone then append random value
+- Unrandomize the appended value
+- CRAZY IDEAS:
+- Check if you are a clone then append random value
+  
 
 # Future Plans:
 - Week 2
