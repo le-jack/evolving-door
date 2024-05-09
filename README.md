@@ -12,12 +12,12 @@ Continuously evolving project
 -   Spawns a script that spawns a script
 -   Randomized append value to change the hash
 -   Reverse shell
+-   Spawns the other implant after 30 seconds
 
 # Current Plans:
 - While running:
-  - Check on implants and replace missing ones
-  - Fix the error output
-- while not running check on running process
+  - Check on implants and replace missing implant
+- while not running check on running (?)
   
 
 # Future Plans:
