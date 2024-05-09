@@ -11,12 +11,13 @@ Continuously evolving project
 -   Can check for another copy of itself
 -   Spawns a script that spawns a script
 -   Randomized append value to change the hash
--   
+-   Reverse shell
 
-# Current Week Plans:
-- Unrandomize the appended value
-- CRAZY IDEAS:
-- Check if you are a clone then append random value
+# Current Plans:
+- While running:
+  - Check on implants and replace missing ones
+  - Fix the error output
+- while not running check on running process
   
 
 # Future Plans:
