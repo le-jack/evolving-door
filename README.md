@@ -13,12 +13,11 @@ Continuously evolving project
 -   Randomized append value to change the hash
 -   Reverse shell
 -   Spawns the other implant after 30 seconds
+-   If the other implant is missing it will replicate another one
 
 # Current Plans:
 - While running:
-  - Check on implants and replace missing implant
-- while not running check on running (?)
-  
+- while not running check on running (?) 
 
 # Future Plans:
 - Week 2
