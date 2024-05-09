@@ -22,18 +22,20 @@ Continuously evolving project
 
 # Future Plans:
 - Week 2
-    - Dropper OS awareness
     - Windows variant
         - Powershell
      
 - Week 3
     - Network awareness
+        - Sends arp tables 
         - Checks all interfaces
         - Finds all hosts within the subnet
 
 - Week 4
-    - Create a dropper
+    - Create a master dropper that remembers where all the implants are and on which hosts
     - More names closer to default applications within Linux/Windows
+    - Redundancy for the master dropper
+      - The ability for a spreader to become the master dropper (?) 
 
 - TBD
     - Remote replication via SMB or HTTP/HTTPS
