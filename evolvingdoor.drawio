@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-10T02:49:22.108Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="qcQBQ7Y84A54xU-qQ5MT" version="24.3.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-05-10T02:50:11.790Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0" etag="9GLx-acOPNvWPP_4Bwa-" version="24.3.1" type="github" pages="2">
   <diagram name="Current" id="Pi34j2TQSsTNF2lfRvoI">
     <mxGraphModel dx="2068" dy="960" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -66,6 +66,11 @@
         <mxCell id="yTUMi6zYlrmB9oeQZxO9-22" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yTUMi6zYlrmB9oeQZxO9-21">
           <mxGeometry y="-1" relative="1" as="geometry">
             <mxPoint y="-120" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BVOpuoFG2L9uYGawcN_E-0" value="&lt;div&gt;No&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yTUMi6zYlrmB9oeQZxO9-21">
+          <mxGeometry x="-0.4" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="yTUMi6zYlrmB9oeQZxO9-23" value="Is the other implant up?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="yTUMi6zYlrmB9oeQZxO9-1">
