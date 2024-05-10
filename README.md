@@ -1,5 +1,5 @@
 # evolving-door:
-Continuously evolving project
+Autonomous Beacon
 
 # Current Features:
 -   Bash
